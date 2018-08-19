@@ -1,0 +1,11 @@
+ .box {
+    -webkit-box-shadow: 20px 14px 5px 4px rgba(0,0,0,0.67);
+    -moz-box-shadow: 20px 14px 5px 4px rgba(0,0,0,0.67);
+     box-shadow: 20px 14px 5px 4px rgba(0,0,0,0.67);
+     height: 150px;
+     width: 150px;
+     margin-right: 100px;
+     background-color:#1f89a3 ;
+     float: left;
+     text-align:center;
+ }
