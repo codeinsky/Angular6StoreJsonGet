@@ -13,21 +13,22 @@ var milkPhoto : string = "http://www.camperdowndairy.com.au/wp-content/uploads/2
 })
 export class DataService {
 constructor (private http: HttpClient) {}
-public json= "http://localhost:3000/items/" ; 
-//public json= "https://api.myjson.com/bins/hrzgc" ; 
+// public json= "jasonbase.com/things/kRYL.json" ; 
+public json= "www.api.myjson.com/bins/hrzgc" ; 
+// public json="https://www.jasonbase.com/things/kRYL.json";
 
 public getServerData():Observable<Item[]> {
 	return this.http.get<Item[]>(this.json);
 }
 
-	public items: Item[] = [
-	{ name : "tomatos" , photo : tomatoPhoto  , bought : false , price : 10} ,
-	{ name : "orange" , photo : orangePhoto , bought : false  , price : 20} , 
-	{ name : "bread" , photo : breadPhoto , bought : false  , price : 30} , 
-	{ name : "milk" , photo : milkPhoto , bought : false  , price : 40} ,
-	{ name : "milk" , photo : milkPhoto , bought : false  , price : 40} , 
-	{ name : "milk" , photo : milkPhoto , bought : false  , price : 40} , 
- 	];
+	// public items: Item[] = [
+	// { name : "tomatos" , photo : tomatoPhoto  , bought : false , price : 10} ,
+	// { name : "orange" , photo : orangePhoto , bought : false  , price : 20} , 
+	// { name : "bread" , photo : breadPhoto , bought : false  , price : 30} , 
+	// { name : "milk" , photo : milkPhoto , bought : false  , price : 40} ,
+	// { name : "milk" , photo : milkPhoto , bought : false  , price : 40} , 
+	// { name : "milk" , photo : milkPhoto , bought : false  , price : 40} , 
+ // 	];
 
 public getData() {
 	return this.items;

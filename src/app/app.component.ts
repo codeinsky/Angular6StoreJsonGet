@@ -22,7 +22,7 @@ constructor(private data:DataService){
 this.data.getServerData().subscribe(data => this.items = data);
 //this.data.getServerData().subscribe(function(data){this.items = data});
 
-console.log(JSON.stringify(this.items));
+//console.log(JSON.stringify(this.items));
 }
 
 // public items: Item[] = [
